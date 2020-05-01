@@ -90,7 +90,7 @@ func (l *TransactionListener) cleanupOrderState(isSale bool, contract *pb.Ricard
 }
 
 func (l *TransactionListener) OnTransactionReceived(cb wallet.TransactionCallback) {
-	log.Info("Transaction received", cb.Txid, cb.Height)
+	// log.Info("Transaction received", cb.Txid, cb.Height)
 
 	l.Lock()
 	defer l.Unlock()
